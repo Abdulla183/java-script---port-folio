@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Portfolio</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        header {
+            background-color: #3498db;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+
+        nav {
+            background-color: #2980b9;
+            padding: 0.5em;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1em;
+        }
+
+        section {
+            padding: 2em;
+        }
+
+        footer {
+            background-color: #34495e;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Kathwal Abdulla</h1>
+        <p>Web Developer | UI/UX Designer</p>
+    </header>
+
+    <nav>
+        <a href="#introduction">Introduction</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="introduction">
+        <h2>Introduction</h2>
+        <p>Welcome to my portfolio! I am a passionate web developer and UI/UX designer with a focus on creating user-friendly and innovative solutions.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <!-- Include details about your projects with links and descriptions -->
+        <div class="project">
+            <h3>Project 1</h3>
+            <p>Description of the project goes here.</p>
+            <a href="#">View Project</a>
+        </div>
+
+        <div class="project">
+            <h3>Project 2</h3>
+            <p>Description of the project goes here.</p>
+            <a href="#">View Project</a>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <!-- List your skills here -->
+        <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>UI/UX Design</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <!-- Include your contact information -->
+        <p>Email:kathwalabdulla120@gmail.com</p>
+        <p>LinkedIn: linkedin.com/in/kathwalabdulla</p>
+        <p>GitHub: github.com/Abdulla183</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
+    </footer>
+
+    <!-- Add JavaScript for smooth scrolling and other interactivity -->
+    <script>
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
